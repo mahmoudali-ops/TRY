@@ -1,0 +1,37 @@
+nav
+{
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+a
+{
+    position: relative;
+    cursor: pointer;
+    color: black;
+    font-size: large;
+    transition: color 0.25s;
+}
+a::after
+{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    scale: 1 0;
+    background-color: black;
+    transition: 0.45s;
+    inset: 0;
+}
+a:hover{color: black;}
+a:hover::after
+{
+    width: 100%;
+    scale: 1 1;
+}input:focus+label{
+    transform: translateY(-25px);
+    color: #991616;
+}
+input:focus{border-color: #991616;}
+
